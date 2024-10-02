@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  
+  .row
+    .col-12.col-md-8
+      form(action="/location/review", method="post", role="form")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="name") Name
+          .col-12.col-sm-10
+            input#name.form-control(type="text", name="name", required="required", placeholder="Enter your name")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="rating") Rating
+          .col-12.col-sm-2
+            select#rating.form-control(name="rating", required="required")
+              option(value="5") 5
+              option(value="4") 4
+              option(value="3") 3
+              option(value="2") 2
+              option(value="1") 1
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="review") Review
+          .col-12.col-sm-10
+            textarea#review.form-control(name="review", rows="5", required="required", placeholder="Write your review here...")
+        .form-group.row
+          .col-sm-12
+            button.btn.btn-primary.float-right(type="submit") Add my review
+
+    .col-12.col-md-4
+      h3 Additional Info
+      p Submitting a helpful review can benefit both the restaurant and future customers. Here are a few tips to consider:
+      ul
+        li Focus on key aspects like food quality, service, ambiance, and cleanliness.
+        li Be polite and respectful in your language, even if providing constructive criticism.
+        li Reviews that are honest and objective help others make informed decisions.
+      

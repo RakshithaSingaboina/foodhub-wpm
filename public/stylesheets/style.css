@@ -1,0 +1,340 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6; /* Light background for a clean look */
+  color: #333;
+  padding-top: 60px; /* Space for the fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #2c3e50; /* Darker shade for headings */
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #4d4d4d;
+}
+
+/* Navbar */
+.navbar {
+  background: #ff6347; /* Tomato color for the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff; /* White text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #ffe5d4; /* Slightly lighter color on hover */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background: #f55b42; /* Darker tomato color on hover */
+  border-radius: 5px;
+}
+
+/* Banner Section */
+.row.banner {
+  background-color: #4caf50; /* Greenish background */
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #388e3c;
+}
+
+.row.banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.banner .tagline {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Form Container */
+.form-group {
+  margin-bottom: 1.5rem; /* Spacing between form groups */
+}
+
+/* Labels */
+label {
+  font-weight: 500; /* Slightly bold for better readability */
+  color: #2c3e50; /* Darker shade for labels */
+}
+
+/* Input Fields */
+.form-control {
+  border-radius: 5px; /* Rounded corners for input fields */
+  border: 1px solid #ccc; /* Light border */
+  padding: 10px; /* Padding inside input fields */
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow effect */
+}
+
+/* Button */
+button.btn {
+  background-color: #ff6347; /* Tomato color */
+  border: none; /* No border for button */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px; /* Rounded corners for button */
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #f55b42; /* Darker tomato color on hover */
+}
+
+/* Review Container */
+.revcontainer {
+  margin-bottom: 2rem; /* Spacing between review sections */
+  padding: 1rem;
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.revhead {
+  font-size: 28px;
+  color: #2c3e50; /* Darker shade for headings */
+  border-bottom: 2px solid #4caf50; /* Greenish border */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.revmsg {
+  margin: 0.5rem 0;
+}
+
+/* Card Layout for Locations */
+.card {
+  background: #ffffff; /* White background */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card */
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-block {
+  position: relative;
+}
+
+.card h4 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.card h4 a.locName {
+  color: #4caf50; /* Green color for location name */
+  text-decoration: none;
+}
+
+.card h4 a.locName:hover {
+  color: #388e3c; /* Darker green on hover */
+}
+
+.card p.address {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Badge Styling */
+span.badge {
+  font-size: 14px;
+  padding: 0.4em 0.6em;
+  margin: 0.2rem 0.2rem;
+}
+
+.badge-default {
+  background: #f8f8f8; /* Light gray background */
+  color: #555;
+}
+
+.badge-warning {
+  background: #ff9800; /* Orange for facilities */
+  color: white;
+  border-radius: 15px;
+}
+
+.card-primary span.badge-warning {
+  background: #ff9800; /* Orange badge */
+  padding: 0.4em 0.6em;
+  border-radius: 15px;
+  font-size: 14px;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+}
+
+.card-primary span.badge-warning i.fa.fa-check {
+  margin-right: 5px;
+}
+
+/* Sidebar */
+.lead {
+  background: #4caf50; /* Greenish background */
+  color: white;
+  padding: 1.5rem;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Review Section */
+.review-card {
+  background: #f9f9f9;
+  border-left: 5px solid #4caf50; /* Greenish border */
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.review-card h2.card-title {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+
+.review {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-header span.rating {
+  font-size: 18px;
+  color: #ff9800; /* Orange color for rating */
+}
+
+.review-header span.reviewAuthor {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+.review-header small.reviewTimestamp {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer small {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+}
+
+footer small:hover {
+  color: #ff6347; /* Hover effect for footer text */
+}
+
+/* Button and Links */
+a, .btn {
+  transition: all 0.3s ease;
+}
+
+a {
+  color: #ff6347; /* Tomato color for links */
+}
+
+a:hover, .btn:hover {
+  color: #f55b42;
+  text-decoration: none; /* No underline on hover */
+}
+
+.btn-primary {
+  background-color: #ff6347; /* Tomato color */
+  border-color: #ff6347;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #f55b42; /* Slightly darker on hover */
+  border-color: #f55b42;
+}
+
+.btn-secondary {
+  background-color: #2c3e50; /* Darker button */
+  border-color: #2c3e50;
+}
+
+.btn-secondary:hover {
+  background-color: #37495b;
+  border-color: #37495b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Adjust padding on smaller screens */
+  }
+
+  .navbar-brand {
+    font-size: 24px; /* Slightly smaller brand name */
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 16px; /* Smaller links */
+  }
+
+  .banner {
+    padding: 1rem; /* Adjust banner padding */
+  }
+
+  .form-control {
+    font-size: 14px; /* Smaller input fields */
+  }
+
+  button.btn {
+    font-size: 14px; /* Smaller button text */
+  }
+}
